@@ -22,9 +22,9 @@ class Solution {
             curr = curr.next;
             if (p != null) p = p.next;
             if (q != null) q = q.next;
-        }
-        if (carry > 0) {
-            curr.next = new ListNode(carry);
+            if (carry > 0) {
+                curr.next = new ListNode(carry);
+            }
         }
         return dummyHead.next;
     }
